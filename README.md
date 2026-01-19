@@ -1,5 +1,5 @@
 # Neuro-Lattice
-<img width="1820" height="466" alt="Screenshot 2026-01-18 225729" src="https://github.com/user-attachments/assets/0b65ac00-854b-4b99-b622-bd32e9f30a28" />
+<img width="1517" height="356" alt="Screenshot 2026-01-18 225509" src="https://github.com/user-attachments/assets/cd6d9e74-deb6-49df-935a-062fe73197eb" />
 
 **Neuro-Lattice** is an applied AI organization focused on **reducing inference cost for production deep learning systems**.  
 We build **optimized neural architectures and inference-safe model variants** that significantly reduce GPU memory (HBM) usage, improve throughput, and lower latency — **without sacrificing accuracy or requiring custom kernels**.
@@ -64,9 +64,13 @@ Our models are designed to:
 ## Models
 
 ### ✅ Current MVP
+---
 <img width="2450" height="1614" alt="inference_comparison_80" src="https://github.com/user-attachments/assets/2f38b446-6556-4cd4-bd7b-e70b2f49f7ce" />
+---
 <img width="876" height="390" alt="output (8)" src="https://github.com/user-attachments/assets/c8725ed3-7745-44b1-91a4-4d24aac018e8" />
+---
 <img width="889" height="390" alt="output (9)" src="https://github.com/user-attachments/assets/971a9693-5e76-42ea-a465-0d5ca58460b1" />
+---
 
 - **Neuro-Lattice ResNet-18 (Inference-Optimized)**
   - Task: CIFAR-10
