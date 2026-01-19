@@ -1,0 +1,63 @@
+# ============================================================================
+# Requirements for NeuroLattice Standalone Inference Scripts
+# ============================================================================
+# Python Version: 3.12.7
+# Install with: pip install -r requirements.txt
+# 
+# For CUDA support, install PyTorch with CUDA from: https://pytorch.org/get-started/locally/
+# Example: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+# ============================================================================
+
+# Python Version Requirement
+# Note: This project requires Python 3.8 or higher
+# Tested with Python 3.12.7
+
+# Core Deep Learning Framework
+torch>=2.0.0
+torchvision>=0.15.0
+
+# HuggingFace Transformers (for BERT standalone inference)
+# - transformers: For BERT models, tokenizers, and utilities
+# - datasets: For loading GLUE datasets (SST-2, MNLI, etc.)
+# - huggingface_hub: For downloading models from HuggingFace Hub
+transformers>=4.30.0
+datasets>=2.12.0
+huggingface_hub>=0.16.0
+
+# Numerical Computing
+numpy>=1.24.0
+
+# Plotting and Visualization
+matplotlib>=3.7.0
+
+# ============================================================================
+# Installation Instructions:
+# ============================================================================
+# 1. Ensure Python 3.8+ is installed:
+#    python --version
+#
+# 2. Install all requirements:
+#    pip install -r requirements.txt
+#
+# 3. For GPU support (CUDA), install PyTorch with CUDA:
+#    Visit https://pytorch.org/get-started/locally/ and select your CUDA version
+#    Example for CUDA 12.1:
+#    pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+#
+# 4. Verify installation:
+#    python -c "import torch; print(f'PyTorch: {torch.__version__}'); print(f'CUDA available: {torch.cuda.is_available()}')"
+# ============================================================================
+# Notes:
+# - Standard library modules (os, argparse, datetime, gc, time, collections, 
+#   copy, pathlib, json, pickle, typing, subprocess) are included with Python
+# - First run will download BERT models and datasets from HuggingFace Hub
+# - CIFAR-10 dataset will auto-download on first use
+# ============================================================================
+# Script-Specific Requirements:
+# ============================================================================
+# hf_inference_resnet_standalone.py requires:
+#   - torch, torchvision, numpy, matplotlib
+#
+# hf_inference_bert_standalone.py requires:
+#   - torch, transformers, numpy, matplotlib, datasets, huggingface_hub
+# ============================================================================
