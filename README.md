@@ -15,7 +15,7 @@ Modern AI systems are no longer bottlenecked by model accuracy — they are bott
 In production environments:
 - GPU memory (HBM) limits batch size and throughput
 - Latency spikes break SLAs
-- Static pruning and quantization offer diminishing returns
+- Dynamic pruning and quantization offer diminishing returns
 - Dynamic sparsity breaks kernel stability
 - Hardware-specific optimizations do not generalize
 
